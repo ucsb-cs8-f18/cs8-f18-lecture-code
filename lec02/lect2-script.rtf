@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 >>> import turtle\
+>>> jane = turtle.Turtle()\
+>>> jane.shape("turtle")\
+>>> jane.forward(100)\
+>>> jane.backward(100)\
+>>> jane.width(8)\
+>>> jane.color("red")\
+>>> jane.forward(100)\
+>>> jane.speed(0)\
+>>> jane.left(90)\
+>>> jane.forward(200)\
+>>> jane.left(90)\
+>>> jane.forward(100)\
+>>> jane.goto(-100, 20)\
+>>> jane.up()\
+>>> jane.goto(-200, 40)\
+>>> jane.down()\
+>>> jane.forward(90)\
+>>> jane.goto(-200, 400)\
+>>> jane.goto(-200, 300)\
+>>> jane.seth(60)\
+>>> jane.forward(10)\
+>>> jane.up()\
+>>> jane(0,0)\
+Traceback (most recent call last):\
+  File "<pyshell#49>", line 1, in <module>\
+    jane(0,0)\
+TypeError: 'Turtle' object is not callable\
+>>> jane.goto(0,0)\
+>>> jane.seth(-90)\
+>>> jane.forward(100)\
+>>> jane.down()\
+>>> jane.forward(100)\
+>>> dir(turtle)\
+['Canvas', 'Pen', 'RawPen', 'RawTurtle', 'Screen', 'ScrolledCanvas', 'Shape', 'TK', 'TNavigator', 'TPen', 'Tbuffer', 'Terminator', 'Turtle', 'TurtleGraphicsError', 'TurtleScreen', 'TurtleScreenBase', 'Vec2D', '_CFG', '_LANGUAGE', '_Root', '_Screen', '_TurtleImage', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__forwardmethods', '__func_body', '__loader__', '__methodDict', '__methods', '__name__', '__package__', '__spec__', '__stringBody', '_alias_list', '_make_global_funcs', '_screen_docrevise', '_tg_classes', '_tg_screen_functions', '_tg_turtle_functions', '_tg_utilities', '_turtle_docrevise', '_ver', 'addshape', 'back', 'backward', 'begin_fill', 'begin_poly', 'bgcolor', 'bgpic', 'bk', 'bye', 'circle', 'clear', 'clearscreen', 'clearstamp', 'clearstamps', 'clone', 'color', 'colormode', 'config_dict', 'deepcopy', 'degrees', 'delay', 'distance', 'done', 'dot', 'down', 'end_fill', 'end_poly', 'exitonclick', 'fd', 'fillcolor', 'filling', 'forward', 'get_poly', 'get_shapepoly', 'getcanvas', 'getmethparlist', 'getpen', 'getscreen', 'getshapes', 'getturtle', 'goto', 'heading', 'hideturtle', 'home', 'ht', 'inspect', 'isdown', 'isfile', 'isvisible', 'join', 'left', 'listen', 'lt', 'mainloop', 'math', 'mode', 'numinput', 'onclick', 'ondrag', 'onkey', 'onkeypress', 'onkeyrelease', 'onrelease', 'onscreenclick', 'ontimer', 'pd', 'pen', 'pencolor', 'pendown', 'pensize', 'penup', 'pos', 'position', 'pu', 'radians', 'read_docstrings', 'readconfig', 'register_shape', 'reset', 'resetscreen', 'resizemode', 'right', 'rt', 'screensize', 'seth', 'setheading', 'setpos', 'setposition', 'settiltangle', 'setundobuffer', 'setup', 'setworldcoordinates', 'setx', 'sety', 'shape', 'shapesize', 'shapetransform', 'shearfactor', 'showturtle', 'simpledialog', 'speed', 'split', 'st', 'stamp', 'sys', 'textinput', 'tilt', 'tiltangle', 'time', 'title', 'towards', 'tracer', 'turtles', 'turtlesize', 'types', 'undo', 'undobufferentries', 'up', 'update', 'width', 'window_height', 'window_width', 'write', 'write_docstringdict', 'xcor', 'ycor']\
+>>> \
+>>> help(turtle.goto)\
+Help on function goto in module turtle:\
+\
+goto(x, y=None)\
+    Move turtle to an absolute position.\
+    \
+    Aliases: setpos | setposition | goto:\
+    \
+    Arguments:\
+    x -- a number      or     a pair/vector of numbers\
+    y -- a number             None\
+    \
+    call: goto(x, y)         # two coordinates\
+    --or: goto((x, y))       # a pair (tuple) of coordinates\
+    --or: goto(vec)          # e.g. as returned by pos()\
+    \
+    Move turtle to an absolute position. If the pen is down,\
+    a line will be drawn. The turtle's orientation does not change.\
+    \
+    Example:\
+    >>> tp = pos()\
+    >>> tp\
+    (0.00, 0.00)\
+    >>> setpos(60,30)\
+    >>> pos()\
+    (60.00,30.00)\
+    >>> setpos((20,80))\
+    >>> pos()\
+    (20.00,80.00)\
+    >>> setpos(tp)\
+    >>> pos()\
+    (0.00,0.00)\
+\
+>>> }
