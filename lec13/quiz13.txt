@@ -1,0 +1,15 @@
+2012 10 05 11 0
+2012 10 09 23 59
+<p>In the code at the top of page 104, this line is included twice:<br>
+<code>data = input("Enter a number or just enter to quit: ")</code><br>
+<p>Why is it included twice (once before the loop and once inside the loop)? What would the program do if the one at the bottom were removed?</p>
+++
+<p>What is the problem in the following code?</p>
+<pre>
+x = 5
+y = 10
+while x > 1:
+  y -= 1
+</pre>
+++
+<p>What did you find particularly difficult or confusing about the material you read? If nothing was difficult or confusing, tell us what you found most interesting. Please be as specific as possible: this is meant to help you focus on problematic areas, as well as help me make more meaningful lectures.</p>

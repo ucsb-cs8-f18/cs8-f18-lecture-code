@@ -1,0 +1,41 @@
+# sometimes you can use both types of loops
+>>> for i in range(5):
+...   print(i)
+...
+0
+1
+2
+3
+4
+>>> i = 0
+>>> while i < 5:
+...   print(i)
+...   i = i + 1
+...
+0
+1
+2
+3
+4
+
+# example of while-loop whose body does not execute
+>>> x = 6
+>>> while x > 10:
+...   print(x)
+...   x = x - 1
+...
+>>> x = 5
+
+>>> while True:
+...   x = x - 1
+...   print(x)
+...   if x < 0:
+...     break
+...
+4
+3
+2
+1
+0
+-1
+>>>
