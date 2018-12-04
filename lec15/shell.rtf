@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 >>> \
+>>> \
+>>> \
+======== RESTART: /Users/diba/git/cs8-f18-lecture-code/lec15/birds.py ========\
+>>> bird_dict = \{'eagle':2, 'hawk':6, 'owl':11\}\
+>>> bird_dict['hawk']\
+6\
+>>> bird_dict['crow']\
+Traceback (most recent call last):\
+  File "<pyshell#5>", line 1, in <module>\
+    bird_dict['crow']\
+KeyError: 'crow'\
+>>> bird_dict['crow']=1\
+>>> print(bird_dict['pigeon'])\
+Traceback (most recent call last):\
+  File "<pyshell#7>", line 1, in <module>\
+    print(bird_dict['pigeon'])\
+KeyError: 'pigeon'\
+>>> bird_dict\
+\{'eagle': 2, 'hawk': 6, 'owl': 11, 'crow': 1\}\
+>>> 'eagle' in bird_dict\
+True\
+>>> 'pigeon' not in bird_dict\
+True\
+>>> \
+======== RESTART: /Users/diba/git/cs8-f18-lecture-code/lec15/birds.py ========\
+>>> bird_dict = \{'eagle':2, 'hawk':6, 'owl':11\}\
+>>> new_sighting(bird_dict, 'crow')\
+Traceback (most recent call last):\
+  File "<pyshell#12>", line 1, in <module>\
+    new_sighting(bird_dict, 'crow')\
+TypeError: new_sighting() missing 1 required positional argument: 'sighting'\
+>>> new_sighting2(bird_dict, 'crow')\
+Traceback (most recent call last):\
+  File "<pyshell#13>", line 1, in <module>\
+    new_sighting2(bird_dict, 'crow')\
+NameError: name 'new_sighting2' is not defined\
+>>> new_sighting_2(bird_dict, 'crow')\
+>>> bird_dict\
+\{'eagle': 2, 'hawk': 6, 'owl': 11, 'crow': 1\}\
+>>> new_sighting_2(bird_dict, 'owl')\
+>>> bird_dict\
+\{'eagle': 2, 'hawk': 6, 'owl': 12, 'crow': 1\}\
+>>> bird_dict['pigeon']\
+Traceback (most recent call last):\
+  File "<pyshell#18>", line 1, in <module>\
+    bird_dict['pigeon']\
+KeyError: 'pigeon'\
+>>> bird_dict.get('pigeon', 15)\
+15\
+>>> bird_dict.get('crow', 15)\
+1\
+>>> bird_dict['pigeon']=bird_dict.get('pigeon', 15)\
+>>> bird_dict\
+\{'eagle': 2, 'hawk': 6, 'owl': 12, 'crow': 1, 'pigeon': 15\}\
+>>> s1 = \{10, 15, 20, 30\}\
+>>> dir(s1)\
+['__and__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']\
+>>> s1.add(100)\
+>>> s1\
+\{100, 10, 15, 20, 30\}\
+>>> s1.add(100)\
+>>> s1\
+\{100, 10, 15, 20, 30\}\
+>>> s2 = \{ 5, 6, 7\}\
+>>> s1 | s2\
+\{100, 20, 5, 6, 7, 10, 30, 15\}\
+>>> s1 & s2\
+set()\
+>>> s1 && s2\
+SyntaxError: invalid syntax\
+>>> s1 & s2\
+set()\
+>>> s1\
+\{100, 10, 15, 20, 30\}\
+>>> s2\
+\{5, 6, 7\}\
+>>> s2.add(100)\
+>>> s1 & s2\
+\{100\}\
+>>> s1 - s2\
+\{10, 20, 30, 15\}\
+>>> s1 = \{1,2 , 3, 4, 5\}\
+>>> s2 = \{1, 2\}\
+>>> s2 < s1\
+True\
+>>> s2<=s1\
+True\
+>>> s2 = \{1, 6\}\
+>>> s2 < s1\
+False\
+>>> s1 == s2\
+False\
+>>> s2 !=s1\
+True\
+>>> s1\
+\{1, 2, 3, 4, 5\}\
+>>> 6 in s1\
+False\
+>>> 5 in s5\
+Traceback (most recent call last):\
+  File "<pyshell#49>", line 1, in <module>\
+    5 in s5\
+NameError: name 's5' is not defined\
+>>> 5 in s1\
+True\
+>>> }
